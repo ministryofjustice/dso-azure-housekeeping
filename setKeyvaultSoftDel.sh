@@ -1,7 +1,7 @@
 #!/bin/bash
 ## Script to set soft-delete flag on all keyvaults. 
 ## This allows us to recover all keyvaults for up to 90 days, if they're accidentally trashed.
-## Set "softDelete" to '1' to actually set the soft delete flag (on line 7)
+## Set "softDelete" to '1' to actually set the soft delete flag (on line 9)
 
 for i in `az account list -o tsv | cut -f 2`
 do
