@@ -2,7 +2,7 @@
 # Script that deletes all un-managed disks. This script iterates over all storage accounts in your default subscription
 # Set deleteUnattachedVHDs=1 if you want to delete unattached VHDs
 # Set deleteUnattachedVHDs=0 if you want to see the details of the unattached VHDs
-deleteUnattachedVHDs=0
+deleteUnattachedVHDs=1
 
 storageAccountIds=$(az storage account list --query [].[id] -o tsv)
 
